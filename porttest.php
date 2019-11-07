@@ -9,14 +9,14 @@ foreach ($ports as $port)
 
     if (is_resource($connection))
     {
-        echo '<h3>' . $host . ': <span style="color:green"> ' . $port . ' </span> ' . '(' . getservbyport($port, 'tcp') . ') is open.</h3>' . "\n";
+        echo '<h3>' . $host . ': <span style="color:green"> ' . $port . ' </span> ' . '(' . getservbyport($port, 'tcp') . ') is open.</h3>' . "<br>";
 
         fclose($connection);
     }
 
     else
     {
-        echo '<h3>' . $host . ' :<span style="color:red"> ' . $port . '</span> is not responding.</h3>' . "\n";
+        echo '<h3>' . $host . ' :<span style="color:red"> ' . $port . '</span> is not responding.</h3>' . "<br>";
     }
 }
 
@@ -31,13 +31,13 @@ foreach ($ports as $port)
 
     if (is_resource($connection))
     {
-        echo '<h3>' . $host . ': <span style="color:green"> ' . $port . ' </span> ' . '(' . getservbyport($port, 'tcp') . ') is open.</h3>' . "\n";
+        echo '<h3>' . $host . ': <span style="color:green"> ' . $port . ' </span> ' . '(' . getservbyport($port, 'tcp') . ') is open.</h3>' . "<br>";
 
         fclose($connection);
     }
 
     else
     {
-        echo '<h3>' . $host . ' :<span style="color:red"> ' . $port . '</span> is not responding.</h3>' . "\n";
+        echo '<h3>' . $host . ' :<span style="color:red"> ' . $port . '</span> is not responding.</h3>' . "<br>";
     }
 }
